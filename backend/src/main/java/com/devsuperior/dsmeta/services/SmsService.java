@@ -34,10 +34,10 @@ public class SmsService {
 
         String date = sale.getDate().getMonth() + "/" + sale.getDate().getYear();
 
-//        String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date
-//                + " com um total de R$ " + String.format("%.0f", sale.getAmount());
+       String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date
+               + " com um total de R$ " + String.format("%.0f", sale.getAmount());
 
-        String msg = "Lé Lu lu lé, esse é o Carlinhos FM, você está recebendo esse SMS porque é muito besta. Assinado Xirixe";
+        //String msg = "Lé Lu lu lé, esse é o Carlinhos FM, você está recebendo esse SMS porque é muito besta. Assinado Xirixe";
         Twilio.init(twilioSid, twilioKey);
 
         PhoneNumber to = new PhoneNumber(twilioPhoneTo);
